@@ -1,0 +1,91 @@
+admin
+-id
+-firstNaame
+-lastName
+-email
+-password
+-phone1
+-phone2 => null
+-group => [admin, serves, resiption]
+-status [active, unactive]
+-salry
+-img
+-rolesId
+-cresteAt
+
+activeAdmin
+-id
+-adminId
+-start [timestamp] login
+-end [timestamp] logout
+
+custmer
+-id
+-firstNaame
+-lastName
+-email
+-password
+-img
+-phone
+-addeise
+-cresteAt
+
+orderCustmer
+-id
+-custmerId
+-category
+-start
+-end
+-options [array(فطارو غدا عشا)]
+-days
+-price (day * priceRoom)
+-createAt
+
+-category
+-id
+-name
+-detelse
+-createAt
+
+
+room
+-id
+-name
+-imge
+-price
+-status
+-descriptions
+-categoryId
+-createAt
+-adminId
+
+option
+-id
+-name
+-price
+
+
+rooles
+-id
+-name
+-adminId
+
+
+<!-- -subcategory
+-id
+-categoryId
+-name
+-createAt
+ -->
+
+
+
+
+
+admin => Admin
+CURD custmer
+CURD empleey
+CURD room
+CURD orders
+Activte(Custmre)
+
