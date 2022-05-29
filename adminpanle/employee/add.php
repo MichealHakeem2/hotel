@@ -55,8 +55,11 @@ if (isset($_GET['edit'])) {
                 <div class="col-12 col-md-9 col-lg-7 col-xl-6">
                     <div class="card" style="border-radius: 15px;">
                         <div class="card-body p-5">
+                        <?php if ($update) : ?>
                             <h5 class="text-center">Data Employees</h5>
-
+                            <?php else : ?>
+                            <h5 class="text-center">Update Data Employees</h5>
+                                <?php endif; ?>
                             <!-- No Labels Form -->
                             <form class="row g-3" method="POST">
                                 <div class="col-md-12">
