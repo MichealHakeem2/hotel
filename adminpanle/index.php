@@ -2,6 +2,7 @@
 include './init.php';
 
  $countEmployee = COUNT(seletQuery('employee'));
+ $countRoom = COUNT(seletQuery('rooms'));
 ?>
 <main id="main" class="main">
 
@@ -52,7 +53,7 @@ include './init.php';
                     <i class='bx bx-hotel'></i>
                   </div>
                   <div class="ps-3">
-                    <h6>145</h6>
+                    <h6><?= $countRoom ?></h6>
                   </div>
                 </div>
               </div>
